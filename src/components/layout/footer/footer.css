@@ -1,0 +1,52 @@
+.footerContainer {
+  background-color: rgb(46, 43, 43);
+  padding: 0 4%;
+}
+
+.footerUl {
+  color: white;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+.footerUl li{
+    color: rgb(210, 208, 213);
+    padding: 0 10px
+}
+
+p {
+    color: rgb(210, 208, 213);
+    padding: 0 10px
+}
+
+.mediaContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialNetsContainer {
+  padding: 15px 0;
+}
+
+.socialNetsIcon {
+  color: white;
+  cursor: pointer;
+  height: 40px !important;
+  margin: 10px;
+  width: 40px !important;
+}
+
+.storesContainer {
+  padding: 15px;
+}
+
+.storesContainer img {
+  cursor: pointer;
+  margin: 10px;
+}
+.windowsStoreImg {
+  border: solid 0.5px rgb(154, 145, 163);
+  height: 40px;
+  object-fit: cover;
+  width: 135px;
+}

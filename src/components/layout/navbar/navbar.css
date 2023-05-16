@@ -1,0 +1,58 @@
+.navContainer {
+  background-color: blue;
+}
+
+.topNavContainer {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.navTitle {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.liLogin {
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.freeTrial {
+  align-self: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  display: flex;
+  font-size: 1.5rem;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+  width: 240px;
+}
+
+ul {
+  display: flex;
+}
+
+.bottomNavContainer {
+  align-items: center;
+  background-color: rgb(46, 43, 43);
+  display: flex;
+  height: 60px;
+  padding: 0 4%;
+}
+
+.bottomNavContainer h2 {
+  color: white;
+}

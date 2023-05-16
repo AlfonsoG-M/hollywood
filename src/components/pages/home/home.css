@@ -1,0 +1,11 @@
+.homeContainer {
+  display: flex;
+  padding: 20px;
+}
+
+.linkDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    text-decoration: none;
+}
