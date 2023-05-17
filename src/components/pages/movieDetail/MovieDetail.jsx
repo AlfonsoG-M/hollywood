@@ -1,15 +1,26 @@
 import { Typography } from "@mui/material";
+import "./movieDetail.css";
 
 const MovieDetail = ({ movieInfo }) => {
-  const { title, programType, description, releaseYear } = movieInfo;
-
+  const { title, programType, description, releaseYear, images } = movieInfo;
 
   return (
-    <div>
+    <div className="movieDetailContainer">
       <Typography variant="h3">{title}</Typography>
-      <Typography variant="subtitle1">{programType}</Typography>
-      <Typography variant="body2">Released in {releaseYear}</Typography>
-      <Typography variant="body2">{description}</Typography>
+      <Typography
+        sx={{ fontSize: "20px", fontWeight: 500 }}
+        textTransform={"uppercase"}
+        variant="subtitle1"
+      >
+        {programType}
+      </Typography>
+      <div className="bottomdescriptionDiv">
+        <img src={images.Poster.url} alt="" className="movieDetailImg" />
+        <div className="descriptionDiv">
+          <Typography variant="body2" sx={{color: "black"}} mb={"20px"} mt={"10px"}>Released in {releaseYear}</Typography>
+          <Typography variant="body2" sx={{color: "black"}}>{description}</Typography>
+        </div>
+      </div>
     </div>
   );
 };

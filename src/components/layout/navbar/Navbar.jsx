@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
-const Navbar = ({ title }) => {
+const Navbar = ({ title, pathname }) => {
   return (
     <div className="navContainer">
       <div className="topNavContainer">
@@ -12,6 +13,11 @@ const Navbar = ({ title }) => {
       </div>
       <div className="bottomNavContainer">
         <h2>{title}</h2>
+        {pathname != "/" && (
+          <Link to={"/"} className="homeLink">
+            <h2>Home</h2>
+          </Link>
+        )}
       </div>
     </div>
   );

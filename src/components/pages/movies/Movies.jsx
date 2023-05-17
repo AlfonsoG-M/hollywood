@@ -5,7 +5,6 @@ const Movies = ({ movies }) => {
   return (
     <div className="moviesContainer">
       {movies.map((movie) => {
-        console.log(movie);
         return (
           <Link to={`/movieDetail/${movie.id}`} key={movie.title} style={{textDecoration:"none"}}>
             <div className="cardDiv">

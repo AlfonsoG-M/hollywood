@@ -5,17 +5,18 @@ import { getProductById } from '../../../services/services'
 
 const MovieDetailContainer = () => {
     const { id }= useParams()
-    const [movieInfo, setMovieInfo] = useState({})
+    const [movieInfo, setMovieInfo] = useState(null)
     useEffect(()=>{
         getProductById(id).then((res)=>setMovieInfo(res.data)).catch((error)=>console.log(error))
     }, [id])
 
-    
-    
     console.log(movieInfo);
-    console.log(movieInfo.images.Poster);
   return (
-    <div><MovieDetail movieInfo={movieInfo}/></div>
+    <div>
+        {
+            movieInfo && <MovieDetail movieInfo={movieInfo}/>
+        }
+    </div>
   )
 }
 

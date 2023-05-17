@@ -12,14 +12,14 @@ const NavbarContainer = () => {
       setTitle("Popular Movies");
     } else if (pathname === "/series") {
       setTitle("Popular Series");
-    } else if (pathname === "/product") {
+    } else if (pathname === "/movieDetail") {
       setTitle("Product Detail");
     }
   }, [pathname]);
 
   return (
     <div>
-      <Navbar title={title} />
+      <Navbar title={title} pathname={pathname} />
     </div>
   );
 };
